@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+}
+#main {
+}
+
+#header {
+  height: 46px;
+  background-color: #000;
+}
+
+#nav {
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 24px;
+  line-height: 46px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#nav li:hover a {
+  color: #000;
+  background-color: #fff;
+}
+
+#nav .subnav {
+  display: none;
+}
+
+#slider {
+}
+
+#content {
+}
+
+#footer {
+}

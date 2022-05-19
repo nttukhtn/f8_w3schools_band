@@ -1,0 +1,476 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* COMMON */
+.text-white {
+  color: #fff !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.open {
+  display: flex !important;
+}
+
+.close {
+  display: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: auto -8px 16px;
+}
+
+.col {
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.333333333%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.btn {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#main {
+}
+
+#header {
+  /* width: 100%; */
+  height: var(46.5px);
+  background-color: #000;
+  position: fixed; /* element nổi lên trên mấy thằng khác */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* justify-content: space-around; */
+}
+
+/* Do thẻ ul có display:block nên icon search bị đẩy xuống dưới */
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 46.5px;
+}
+
+#nav li a {
+  text-decoration: none;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%); */
+  box-shadow: 0px 0px 20px 2px rgb(132, 132, 132);
+}
+
+#nav .subnav li {
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 8px 16px;
+  min-width: 160px;
+}
+
+#header .search-btn {
+  display: inline-block;
+  float: right;
+}
+
+#header .search-icon {
+  color: #fff;
+  line-height: 1.5;
+  padding: 12px 24px;
+}
+
+#header .search-icon:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#slider {
+  margin-top: 46.5px;
+  padding-top: 50%;
+  background: top center / cover no-repeat
+      url("/assets/img/sliders/slider1.jpg"),
+    url("/assets/img/placeholder-image.png");
+  position: relative;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 32px;
+  /* padding: 0 32px; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 100%; */
+  color: #fff;
+  text-align: center;
+}
+
+#slider .text-heading {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#content {
+}
+
+#content .content-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 64px 0;
+}
+
+#content .section-heading {
+  letter-spacing: 4px;
+  font: 400 30px "Segoe UI", Arial, sans-serif;
+  margin: 10px 0;
+}
+
+#content .section-sub-heading {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+  text-align: center;
+}
+
+#content .about-text {
+  /* width: 70%; */
+  margin: 15px 0;
+  text-align: justify;
+}
+
+#content .members {
+  padding: 32px 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#content .member {
+  /* float:left; */
+  /* width: 60%; */
+  /* padding: ; */
+}
+
+#content .member img {
+  width: 60%;
+  border-radius: 4px;
+}
+
+#content .member-name {
+  margin: 15px 0;
+}
+
+#content .tour-section {
+  width: 100%;
+  background-color: #000;
+}
+
+.tour-section .section-sub-heading {
+  margin: 15px auto;
+}
+
+ul.tickets-amount {
+  margin-top: 25px;
+
+  background-color: #fff;
+  color: #757575;
+  border: 1px solid #ccc;
+  list-style-type: none;
+}
+
+.tickets-amount li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+}
+
+.tickets-amount .sold-out {
+  background-color: #f44336;
+  margin-left: 16px;
+  padding: 2px 8px;
+}
+
+.tickets-amount .quantity-left {
+  float: right;
+  background-color: #000;
+  margin-right: 16px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.places {
+  padding: 32px 0;
+}
+
+.place {
+  padding: 0 8px;
+}
+
+.place .place-img {
+  width: 100%;
+  display: block;
+}
+
+.place .place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  background-color: #fff;
+  padding: 0.01em 16px;
+  padding-bottom: 20px;
+}
+
+.place .place-heading {
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.place .place-time {
+  opacity: 0.6;
+}
+
+.place .place-desc {
+  margin: 15px 0;
+}
+
+.place .buy-ticket-btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+#footer {
+  /* min-height: 300vh; */
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.modal-container {
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 250px;
+  animation: modalFadeIn ease 0.3s;
+}
+
+.modal-close {
+  position: absolute;
+  background-color: #009688;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #009688;
+  height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.01em 16px;
+  /*  */
+  padding: 32px auto;
+
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Segoe UI", Arial, sans-serif;
+  /* margin: 10px 0; */
+}
+
+.modal .suitcase-icon {
+  margin-right: 16px;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  /* margin: 15px; */
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.modal .modal-input {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 11px;
+}
+
+#modal-pay-btn {
+  color: white;
+  background-color: #009688;
+  width: 100%;
+  padding: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  /* margin: 16px 0; */
+  margin-top: 16px;
+  /* color: */
+}
+
+#modal-pay-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-help a {
+  color: #2196f3;
+}
+
+.modal-footer {
+}
+.modal-help {
+}
+
+.contact-section {
+  /* width: 800px; */
+  max-width: 800px;
+  margin: auto;
+  height: 430px;
+  padding: 0.01em 16px;
+}
+
+.contact-section .content-section {
+}
+
+.contact-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* display: flex;
+  justify-content: space-between; */
+  /* -> row */
+}
+.contact-band-info {
+  font-size: 18px;
+}
+.contact-fan-info {
+}
+.contact-fan-info input {
+  font-size: 15px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.contact-band-info span {
+  margin-left: 10px;
+}
+
+.contact-fan-info .fan-message {
+  width: 100%;
+  margin-top: 10px;
+}
+.send-contact-btn {
+  float: right;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+
+#footer {
+  height: 100vh;
+  background-color: #009688;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
