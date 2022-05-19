@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The band &#119136;</title>
+    <link rel="icon" href="./assets/img/guitar.png" type="image/icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -24,10 +25,10 @@
     <div id="main">
       <div id="header">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#the-band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li id="nav-more">
             <a href=""
               >More <i class="nav-caret-down fa-solid fa-caret-down"></i
@@ -55,7 +56,7 @@
 
       <div id="content">
         <!-- ABOUT -->
-        <div class="content-section">
+        <div id="the-band" class="content-section">
           <h2 class="section-heading">THE BAND</h2>
           <p class="section-sub-heading">We love music</p>
           <p class="about-text">
@@ -100,7 +101,7 @@
         </div>
         <!-- END ABOUT -->
         <!-- TOUR -->
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
           <div class="content-section">
             <h2 class="section-heading text-white">TOUR DATES</h2>
             <p class="section-sub-heading text-white">
@@ -172,7 +173,7 @@
         </div>
         <!-- END TOUR -->
         <!-- START CONTACT -->
-        <div class="contact-section">
+        <div id="contact" class="contact-section">
           <div class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heading">Fan? Drop a note!</p>
@@ -203,9 +204,24 @@
           </div>
         </div>
         <!-- END CONTACT -->
+
+        <div class="map-section">
+          <img src="./assets/img/map.jpg" alt="Map" />
+        </div>
       </div>
 
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="social-list">
+          <a href=""> <i class="fa-brands fa-facebook"></i> </a
+          ><a href=""> <i class="fa-brands fa-snapchat"></i> </a
+          ><a href=""> <i class="fa-brands fa-pinterest"></i> </a
+          ><a href=""> <i class="fa-brands fa-twitter"></i> </a
+          ><a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+        </div>
+        <div>
+          <p class="copyright">Powered by <a href="#">w3.css</a>, made by tu</p>
+        </div>
+      </div>
     </div>
     <div class="modal" id="buy-ticket-modal">
       <div class="modal-container" id="buy-ticket-modal-container">
